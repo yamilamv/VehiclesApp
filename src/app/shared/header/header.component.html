@@ -1,0 +1,13 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" [routerLink]="['/']">Inicio</a>
+    <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" [ngClass]="{'show': navbarOpen}">
+      <div class="navbar-nav">
+        <a class="nav-link" [routerLink]="['/vehicle']" routerLinkActive="active">Vehículos</a>
+      </div>
+    </div>
+  </div>
+</nav>

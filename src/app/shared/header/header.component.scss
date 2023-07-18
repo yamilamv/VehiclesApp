@@ -1,0 +1,12 @@
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.collapse.show {
+  display: flex !important;
+}
+
+.nav-link.active {
+  font-weight: 500;
+}

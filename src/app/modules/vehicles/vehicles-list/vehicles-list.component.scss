@@ -1,0 +1,45 @@
+.list-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.list-item:hover {
+  background-color: #f5f5f5;
+}
+
+.make-link {
+  color: #0D6EFD;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.make-link:hover,
+.make-link:focus {
+  color: darkblue;
+}
+
+.title-make {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+
+#makes ::ng-deep .cdk-virtual-scroll-viewport {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #f0f0f0 #d3d3d3;
+}
+
+#makes ::ng-deep .cdk-virtual-scroll-viewport::-webkit-scrollbar {
+  width: 8px;
+}
+
+#makes ::ng-deep .cdk-virtual-scroll-viewport::-webkit-scrollbar-thumb {
+  background-color: #d3d3d3;
+}
+
+#makes ::ng-deep .cdk-virtual-scroll-viewport::-webkit-scrollbar-thumb:hover {
+  background-color: #a0a0a0;
+}

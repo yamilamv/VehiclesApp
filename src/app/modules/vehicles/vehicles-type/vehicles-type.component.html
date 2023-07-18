@@ -1,0 +1,21 @@
+<div *ngIf="vehiclesType$ | async as vehiclesType">
+  <div class="mt-2">
+    <div class="w-100">
+      <h3 class="mod-coche">Tipos de Vehículos</h3>
+    </div>
+  </div>
+
+  <div *ngIf="loading$ | async" class="position-absolute start-50 mt-4 translate-middle">
+    <div class="spinner-border text-info" role="status">
+      <span class="visually-hidden">Cargando...</span>
+    </div>
+  </div>
+
+   <div class="ms-1">
+    <mat-list role="list" *ngFor="let vehiclesType of vehiclesType">
+      <mat-list-item role="listitem" class="list-item">
+        {{ vehiclesType.VehicleTypeName }}
+      </mat-list-item>
+    </mat-list>
+  </div>
+</div>
