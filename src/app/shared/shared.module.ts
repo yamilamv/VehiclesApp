@@ -10,6 +10,9 @@ import {MatListModule} from '@angular/material/list';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatSortModule} from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { FormsModule } from '@angular/forms';
     MatButtonModule,
     MatFormFieldModule,
     MatListModule,
-    MatInputModule
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   exports:[
     CommonModule,
@@ -38,7 +44,10 @@ import { FormsModule } from '@angular/forms';
     MatFormFieldModule,
     MatListModule,
     MatInputModule,
-    HeaderComponent
+    HeaderComponent,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ]
 })
 export class SharedModule { }

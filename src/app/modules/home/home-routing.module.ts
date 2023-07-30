@@ -7,7 +7,8 @@ const routes: Routes = [
     path: '',
     component: HomeComponent,
     children: [
-      { path: 'vehicle', loadChildren: () => import('../vehicles/vehicle.module').then(m => m.VehicleModule) }
+      { path: 'vehicle', loadChildren: () => import('../vehicles/vehicle.module').then(m => m.VehicleModule) },
+      { path: 'game', loadChildren: () => import('../games/games.module').then(m => m.GamesModule) }
     ]
   }
 ];

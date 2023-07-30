@@ -1,0 +1,196 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "games": [
+    {
+      "id": 2,
+      "image": "",
+      "name": "The Witcher 3: Wild Hunt ",
+      "releaseDate": "2015-05-19",
+      "platforms": [
+        1,
+        2
+      ],
+      "description": "The Witcher 3: Wild Hunt is an open-world action role-playing game developed and published by CD Projekt"
+    },
+    {
+      "id": 3,
+      "image": "",
+      "name": "Red Dead Redemption 2",
+      "releaseDate": "2018-10-26",
+      "platforms": [
+        2
+      ],
+      "description": "Red Dead Redemption 2 is an action-adventure game developed and published by Rockstar Games"
+    },
+    {
+      "id": 4,
+      "image": "",
+      "name": "The Last of Us Part II",
+      "releaseDate": "2020-06-19",
+      "platforms": [
+        2,
+        3
+      ],
+      "description": "The Last of Us Part II is an action-adventure game developed by Naughty Dog and published by Sony Interactive Entertainment"
+    },
+    {
+      "id": 5,
+      "image": "",
+      "name": "Assassin's Creed Valhalla",
+      "releaseDate": "2020-11-10",
+      "platforms": [
+        2,
+        3
+      ],
+      "description": "Assassin's Creed Valhalla is an action role-playing game developed and published by Ubisoft"
+    },
+    {
+      "id": 7,
+      "image": "",
+      "name": "Super Mario Odyssey",
+      "releaseDate": "2017-10-27",
+      "platforms": [
+        1,
+        2
+      ],
+      "description": "Super Mario Odyssey is a platform game developed and published by Nintendo"
+    },
+    {
+      "id": 8,
+      "image": "",
+      "name": "God of War (2018)",
+      "releaseDate": "2018-04-20",
+      "platforms": [
+        2
+      ],
+      "description": "God of War is an action-adventure game developed by Santa Monica Studio and published by Sony Interactive Entertainment"
+    },
+    {
+      "id": 9,
+      "image": "",
+      "name": "Hades",
+      "releaseDate": "2020-09-17",
+      "platforms": [
+        2
+      ],
+      "description": "Hades is a rogue-like dungeon crawler video game developed and published by Supergiant Games"
+    },
+    {
+      "id": 11,
+      "image": "",
+      "name": "Grand Theft Auto V",
+      "releaseDate": "2013-09-17",
+      "platforms": [
+        2,
+        3
+      ],
+      "description": "Grand Theft Auto V is an action-adventure game developed by Rockstar North and published by Rockstar Games"
+    },
+    {
+      "id": 14,
+      "image": "",
+      "name": "Call of Duty: Warzone",
+      "releaseDate": "2020-03-10",
+      "platforms": [
+        2
+      ],
+      "description": "Call of Duty: Warzone is a free-to-play battle royale game developed and published by Activision"
+    },
+    {
+      "id": 16,
+      "image": "",
+      "name": "Among Us",
+      "releaseDate": "2018-06-15",
+      "platforms": [
+        2,
+        3
+      ],
+      "description": "Among Us is an online multiplayer party game developed and published by InnerSloth"
+    },
+    {
+      "id": 17,
+      "image": "",
+      "name": "Fortnite",
+      "releaseDate": "2017-07-25",
+      "platforms": [
+        2,
+        3
+      ],
+      "description": "Fortnite is a battle royale game developed and published by Epic Games"
+    },
+    {
+      "id": 18,
+      "image": "",
+      "name": "Apex Legends",
+      "releaseDate": "2019-02-04",
+      "platforms": [
+        1,
+        2
+      ],
+      "description": "Apex Legends is a free-to-play battle royale game developed by Respawn Entertainment and published by Electronic Arts"
+    },
+    {
+      "id": 19,
+      "image": "",
+      "name": "Counter-Strike: Global Offensive",
+      "releaseDate": "2012-08-21",
+      "platforms": [
+        1,
+        2
+      ],
+      "description": "Counter-Strike: Global Offensive is a multiplayer first-person shooter game developed and published by Valve"
+    },
+    {
+      "id": 20,
+      "image": "",
+      "name": "League of Legends",
+      "releaseDate": "2009-10-27",
+      "platforms": [
+        2,
+        3
+      ],
+      "description": "League of Legends is a multiplayer online battle arena game developed and published by Riot Games"
+    },
+    {
+      "id": 21,
+      "image": "",
+      "name": "Prueba crear",
+      "releaseDate": "2023-07-28",
+      "platforms": [
+        1,
+        2
+      ],
+      "description": "prueba description"
+    }
+  ],
+  "platforms": [
+    {
+      "id": 1,
+      "name": "Xbox One"
+    },
+    {
+      "id": 2,
+      "name": "PlayStation 4"
+    },
+    {
+      "id": 3,
+      "name": "PC"
+    }
+  ]
+}

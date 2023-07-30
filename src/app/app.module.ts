@@ -13,6 +13,7 @@ import { MakesEffects } from './state/vehicles/vehicles.effects';
 import { HttpClientModule } from '@angular/common/http';
 import { VehiclesTypeEffects } from './state/vehiclesType/vehiclesType.effects';
 import { ModelsMakeEffects } from './state/modelsMake/modelsMake.effects';
+import { GamesEffects } from './state/games/games.effects';
 
 
 @NgModule({
@@ -30,7 +31,7 @@ import { ModelsMakeEffects } from './state/modelsMake/modelsMake.effects';
       ROOT_REDUCERS
     ),
     StoreDevtoolsModule.instrument({ name: 'Test' }),
-    EffectsModule.forRoot([MakesEffects, VehiclesTypeEffects, ModelsMakeEffects]) //TODO: Exportar en el estado
+    EffectsModule.forRoot([MakesEffects, VehiclesTypeEffects, ModelsMakeEffects, GamesEffects]) //TODO: Exportar en el estado
   ],
   providers: [],
   bootstrap: [AppComponent]

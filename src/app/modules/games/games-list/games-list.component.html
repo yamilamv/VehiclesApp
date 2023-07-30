@@ -1,0 +1,66 @@
+
+  <div class="d-flex mt-2">
+    <div class="mx-auto">
+      <h3 class="text-muted title-make">{{ title }}</h3>
+    </div>
+  </div>
+
+<div class="mt-2">
+  <div class="search-container">
+    <div class="d-flex">
+      <div>
+          <mat-form-field class="search-field">
+            <mat-label>Buscar</mat-label>
+            <input matInput #inputSearch (input)="applyFilter(inputSearch.value)">
+          </mat-form-field>
+        </div>
+        <div class="ms-auto me-4">
+          <button mat-raised-button color="primary" (click)="addGame()">Añadir</button>
+        </div>
+    </div>
+  </div>
+
+<div id="table-game">
+  <mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
+    <!-- Crear dinámicamente las columnas y sus filtros -->
+    <ng-container *ngFor="let column of columns">
+      <ng-container [matColumnDef]="column.dataField">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>
+          <div class="column-header mt-2">{{ column.caption }}</div>
+          <mat-form-field *ngIf="column.canFilter">
+            <div class="filter-field">
+              <mat-icon>search</mat-icon>
+              <input matInput
+                     (keyup)="applyFilterForColumn(column.dataField, $event)"
+                     (click)="$event.stopPropagation()"
+                     (keydown.space)="$event.stopPropagation()"
+                     [attr.data-visible]="column.visible"
+                     autocomplete="off" type="text" name="search">
+            </div>
+          </mat-form-field>
+        </mat-header-cell>
+        <mat-cell *matCellDef="let game">
+          <!-- Renderizar la columna de acciones de manera especial -->
+          <ng-container *ngIf="column.dataField === 'actions'; else otherColumns">
+            <button mat-icon-button color="primary" (click)="editGame(game)">
+              <mat-icon>edit</mat-icon>
+            </button>
+            <button mat-icon-button color="warn" (click)="deleteGame(game)">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </ng-container>
+          <ng-template #otherColumns>
+            {{ game[column.dataField] }}
+          </ng-template>
+        </mat-cell>
+      </ng-container>
+    </ng-container>
+
+    <!-- Definición de las columnas -->
+    <mat-header-row *matHeaderRowDef="getVisibleColumnNames(); sticky: true;"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: getVisibleColumnNames();"></mat-row>
+  </mat-table>
+  <mat-paginator [pageSizeOptions]="[10, 25, 100]" showFirstLastButtons></mat-paginator>
+</div>
+
+</div>
